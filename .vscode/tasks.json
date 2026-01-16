@@ -4,7 +4,7 @@
     {
       "label": "Correr proyecto",
       "type": "shell",
-      "command": "python src/main.py",
+      "command": "gcc src/main.c && ./a.out",
       "group": "build",
       "presentation": {
         "echo": true,
@@ -16,7 +16,7 @@
     {
       "label": "Ejecutar pruebas",
       "type": "shell",
-      "command": "python tests/test_evaluation.py",
+      "command": "cd test && python3 test_main.py",
       "group": "build",
       "presentation": {
         "echo": true,
