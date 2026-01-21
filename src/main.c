@@ -1,26 +1,23 @@
 #include <stdio.h>
 
-int area(int side){    
-    int a = side * side; /*El flotante llega hasta un determinado número*/
-    return a;
-}
-
-int volume(int side){    
-    int v = side * side * side;
-    return v;
+int is_even(int numero){
+    if(numero % 2 == 0){ //determina si al ser dividido entre dos no de resuido
+        return 1; //verdadero, no da resuido
+    }
+    else{
+        return 0; //falso, si da resuido
+    }
 }
 
 int main(){
-    int side = 0;
-    
-    printf("Enter the side lenght:");
-    scanf("%i", &side);
-
-    int a = area(side);
-    int v = volume(side);
-    
-    printf("Square area: %i\n", a);
-    printf("Cube volume: %i\n",v);
-    
+    int number; //llamamos la función
+    printf("Ingrese un número:\n");
+    scanf("%i", &number);
+    if (is_even(number)){
+        printf("El número es par\n");
+    }
+    else{
+        printf("El número es impar\n");
+    }
     return 0;
 }
