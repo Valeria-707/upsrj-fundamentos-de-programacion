@@ -11,13 +11,13 @@ int is_even(int numero){
 
 int main(){
     int number; //llamamos la función
-    printf("Ingrese un número:\n");
+    printf("Ingrese un numero:\n");
     scanf("%i", &number);
     if (is_even(number)){
-        printf("El número es par\n");
+        printf("El numero es par\n");
     }
     else{
-        printf("El número es impar\n");
+        printf("El numero es impar\n");
     }
     return 0;
 }
